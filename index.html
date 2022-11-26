@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/assets/Icons/nike-white.svg" type="image/x-icon">
+    <script src="/index.js" defer></script>
+    <title>Nike Inspired Landing Page</title>
+</head>
+<body>
+    <main class="hero-section">
+        <nav>
+            <img src="./assets/Icons/nike-black.svg" alt="nike logo" class="nav-logo">
+        
+            <!-- navbar-links -->
+            <ul class="nav-menu">
+                <li><a class="active">Home</a></li>
+                <li><a>Men</a></li>
+                <li><a>Women</a></li>
+                <li><a>Kids</a></li>
+                <li>
+                    <a>
+                        <img src="/assets/Icons/cart.svg" class="cartIcon">
+                    </a>
+                </li>
+            </ul>
+        
+            <img src="/assets/Icons/menu.svg" class="nav-menu-mobile" id="nav-menu-mobile">
+        </nav>
+
+        <div class="hero-content">
+            <h1 class="hero-header">NIKE SPECIAL</h1>
+            <p class="hero-sub-header">Black Mamba Sale</p>
+
+            <button class="hero-cta" onclick="console.log('Hello World')">
+                <img src="/assets/Icons/shopping-cart.svg" class="cta-icon">
+                Shop Now
+            </button>
+
+            <p class="countdown-header">Sale Duration</p>
+            <div class="countdown-container">
+                <div class="countdown-item days-item">
+                    <h2 class="countdown-value" id="days"></h2>
+                    <small class="countdown-label">Days</small>
+                </div>
+
+                <div class="countdown-item hours-item">
+                    <h2 class="countdown-value" id="hours"></h2>
+                    <small class="countdown-label">Hours</small>
+                </div>
+
+                <div class="countdown-item minutes-item">
+                    <h2 class="countdown-value" id="minutes"></h2>
+                    <small class="countdown-label">Minutes</small>
+                </div>
+
+                <div class="countdown-item seconds-item">
+                    <h2 class="countdown-value" id="seconds"></h2>
+                    <small class="countdown-label">Seconds</small>
+                </div>
+            </div>
+        </div>
+
+        <img src="/assets/Images/hero-kobe-img.svg" class="hero-img" loading="lazy">
+        <p class="hero-watermark kobe-watermark">KOBE</p>
+        <p class="hero-watermark bryant-watermark">BRYANT</p>
+    </main>
+
+    <div class="displayNone" id="nav-mobile-overlay">
+        <img src="/assets/Icons/close-icon.svg" class="close-menu" id="close-menu">
+        
+        <div class="nav-mobile-links">
+            <a href="#" class="nav-mobile-link nav-mobile-active">Home</a>
+            <a href="#" class="nav-mobile-link">Women</a>
+            <a href="#" class="nav-mobile-link">Men</a>
+            <a href="#" class="nav-mobile-link">Kids</a>
+            <a href="#" class="nav-mobile-link">Cart</a>
+
+        </div>
+
+        <p class="mobile-nav-watermark nike-nav-watermark">NIKE</p>
+        <p class="mobile-nav-watermark store-nav-watermark">STORE</p>
+        <p class="mobile-nav-watermark ph-nav-watermark">PH</p>
+    </div>
+    
+    <section class="featured-section">
+        <div class="featured-header-container">
+            <h1 class="featured-header">FEATURING</h1>
+
+            <img src="/assets/Icons/kobe-logo.svg" class="featured-logo" loading="lazy">
+        </div>
+
+        <p class="shoeName">NIKE METCON 8</p>
+        <div class="tagContainer">
+            <span>Men's Training Shoes</span>
+        </div>
+        <p class="shoePrice">₱ 7395</p>
+
+        <div class="shoeImgContainer">
+            <img src="/assets/Images/metcon1.svg" class="shoeImg shoe1" loading="lazy">
+            <img src="/assets/Images/metcon2.svg" class="shoeImg shoe2" loading="lazy">
+            <img src="/assets/Images/metcon3.svg" class="shoeImg shoe3" loading="lazy">
+            <img src="/assets/Images/metcon4.svg" class="shoeImg shoe4" loading="lazy">
+        </div>
+
+        <p class="featured-watermark experience-watermark">EXPERIENCE</p>
+        <p class="featured-watermark greatness-watermark">GREATNESS</p>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="item item1">
+                <img src="/assets/Images/kobe1.jpg" class="galleryImg img1" loading="lazy">
+        </div>
+        <div class="item item2">
+                <img src="/assets/Images/kobe2.jpg" class="galleryImg" loading="lazy">
+        </div>
+        <div class="item item3">
+                <img src="/assets/Images/kobe3.jpg" class="galleryImg" loading="lazy">
+        </div>
+        <div class="item item4">
+                <img src="/assets/Images/kobe4.jpg" class="galleryImg" loading="lazy">
+        </div>
+        <div class="item item5">
+                <img src="/assets/Images/kobe5.jpg" class="galleryImg" loading="lazy">
+        </div>
+        <div class="item item6">
+                <img src="/assets/Images/kobe6.jpg" class="galleryImg" loading="lazy">
+        </div>
+        <div class="item item7">
+                <img src="/assets/Images/kobe7.jpg" class="galleryImg" loading="lazy">
+        </div>
+        <div class="item item8">
+                <img src="/assets/Images/kobe8.jpg" class="galleryImg" loading="lazy">
+        </div>
+        <div class="item item9">
+                <img src="/assets/Images/kobe9.jpg" class="galleryImg" loading="lazy">
+        </div>
+        <div class="item item10">
+            <img src="/assets/Images/kobe10.jpg" class="galleryImg" loading="lazy">
+        </div>
+        <div class="item item11">
+            <img src="/assets/Images/kobe11.jpg" class="galleryImg" loading="lazy">
+        </div>
+        <div class="item item12">
+            <img src="/assets/Images/kobe12.jpg" class="galleryImg" loading="lazy">
+        </div>
+    </section>
+
+    <section class="motivationContainer-mobile mContainer">
+        <p class="quoteMobile">Dedication sees dreams come true</p>
+        <small class="quoteKobeMobile">Kobe Bryant</small>
+
+        <div class="justDoIt-container-mobile">
+            <img src="./assets/Icons/nike-black.svg" class="justDoIt-nikeLogo-mobile">
+            <h2 class="justDoIt-header">JUST DO IT</h2>
+        </div>
+
+        <p class="leftQuote-mobile">&#8221;</p>
+        <p class="rightQuote-mobile">&#8221;</p>
+        <p class="mamba-mobile">MAMBA</p>
+        <p class="mentality-mobile">MENTALITY</p>
+    </section>
+
+    <section class="motivationContainer-desktop mContainer">
+        <div class="motivation-left">
+            <p class="quote">Dedication sees dreams come true</p>
+            <p class="kobequote">Kobe Bryant</p>
+
+            <div class="justDoIt-container">
+                <img src="/assets/Icons/nike-black.svg" class="justDoIt-nikeLogo">
+                <p class="justDoIt-header">JUST DO IT</p>
+            </div>
+
+            <p class="leftQuote">&#8221;</p>
+            <p class="rightQuote">&#8221;</p>
+            <p class="mamba">MAMBA</p>
+            <p class="mentality">MENTALITY</p>
+        </div>
+
+        <div class="motivation-right">
+            <div class="info-overlay"></div>
+            
+            <div class="info-stats">
+                <h3 class="stats-header">2001 NBA FINALS</h3>
+
+                <div class="stats-container">
+                    <p class="stats-ppg">24.6 PPG</p>
+                    <p class="stats-rbg">7.8 RPG</p>
+                    <p class="stats-assists">5.8 APG</p>
+                    <p class="stats-FG">41.5% FG</p>
+                    <p class="stats-minutes">46.8 Minutes</p>
+                </div>
+            </div>
+
+            <img src="/assets/Images/dedication.jpg" alt="" class="motivation-img">
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="/index.js"></script>
+</body>
+</html>
